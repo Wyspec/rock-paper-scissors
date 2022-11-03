@@ -62,7 +62,6 @@ function playRound(playerSelection, computerSelection) {
       playerScore++;
       return winMessage;
     } else {
-      th;
       computerScore++;
       return loseMessage;
     }
