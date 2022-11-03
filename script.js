@@ -33,12 +33,8 @@ function playGame() {
       return input;
     }
     playRound();
-    console.log(
-      `${playRound(
-        playerSelection,
-        computerSelection
-      )} The score is: ${playerScore} : ${computerScore}`
-    );
+    console.log(`${playRound(playerSelection, computerSelection)} 
+                The score is: ${playerScore} : ${computerScore}`);
   }
   //After 5 rounds have been played, compare the scores and declare a winner or loser.
   if (playerScore > computerScore) {
