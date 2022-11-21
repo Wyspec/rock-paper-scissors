@@ -1,0 +1,106 @@
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 25px;
+}
+
+#status {
+  padding-bottom: 25px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  font-size: 24px;
+  font-family: "Segoe UI";
+  min-height: 500px;
+}
+
+.selections {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.player,
+.computer {
+  padding-top: 25px;
+  padding-bottom: 10px;
+}
+
+body {
+  background-color: black;
+  color: #fb4570;
+  font-family: "Segoe UI";
+  font-size: 18px;
+}
+
+.playerSelection {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 5rem;
+  transition: 100ms;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.playerSelection:hover {
+  transform: scale(1.5);
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fb4570;
+  color: black;
+  margin: auto;
+  padding: 10px;
+  border: 1px solid white;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  animation-name: animate;
+  animation-duration: 0.4s;
+}
+
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@keyframes animate {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
